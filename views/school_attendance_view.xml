@@ -14,6 +14,8 @@
         id="school_attedance_menu_lesson"
         name="Pelajaran"
         parent="school_attedance_menu"
+        action="lesson_class_action"
+        sequence="1"
     />
 
     <!-- Inventory -->
@@ -21,6 +23,7 @@
         id="school_attedance_menu_inventory"
         name="Bangunan"
         parent="school_attedance_menu"
+        sequence="2"
     />
       <menuitem
         id="school_attedance_menu_invetory_building"
@@ -42,6 +45,7 @@
         id="school_attedance_menu_user"
         name="Pengguna"
         parent="school_attedance_menu"
+        sequence="3"
     />
     <menuitem
         id="school_attedance_menu_user_teacher"

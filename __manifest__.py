@@ -9,6 +9,7 @@
         'views/student/student_class_view.xml',
         'views/teacher/teacher_class_view.xml',
         'views/building/building_class_view.xml',
+        'views/lesson/lesson_class_view.xml',
         'views/room/room_class_view.xml',
         'views/school_attendance_view.xml'
     ],
