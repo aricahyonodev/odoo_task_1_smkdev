@@ -11,16 +11,33 @@
         parent="school_attedance_menu"
     /> -->
      <menuitem
+        id="school_attedance_menu_lesson"
+        name="Pelajaran"
+        parent="school_attedance_menu"
+    />
+
+    <!-- Inventory -->
+     <menuitem
         id="school_attedance_menu_inventory"
         name="Bangunan"
         parent="school_attedance_menu"
     />
+      <menuitem
+        id="school_attedance_menu_invetory_building"
+        name="Gedung"
+        parent="school_attedance_menu_inventory"
+        action="building_class_action"
+        sequence="1"
+    /> 
     <menuitem
         id="school_attedance_menu_invetory_room"
         name="Ruangan"
         parent="school_attedance_menu_inventory"
         action="room_class_action"
+        sequence="2"
     /> 
+
+    <!-- User -->
     <menuitem
         id="school_attedance_menu_user"
         name="Pengguna"
@@ -31,12 +48,14 @@
         name="Guru"
         parent="school_attedance_menu_user"
         action="teacher_class_action"
+        sequence="1"
     />
     <menuitem
         id="school_attedance_menu_user_student"
         name="Murid"
         parent="school_attedance_menu_user"
         action="student_class_action"
+        sequence="2"
     />
 
 </odoo>

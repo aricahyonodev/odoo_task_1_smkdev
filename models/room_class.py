@@ -6,5 +6,5 @@ class RoomClass(models.Model):
 
     #form
     room_id = fields.Char(string='NIR')
-    room_name = fields.Char(string='Nama Lengkap')
+    room_name = fields.Char(string='Nama Ruangan')
     capacity = fields.Integer(string='Kapasitas')

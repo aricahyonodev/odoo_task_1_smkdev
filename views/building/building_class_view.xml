@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="building_class_action" model="ir.actions.act_window">
+        <field name="name">Daftar Gedung</field>
+        <field name="res_model">building.class</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="building_class_view_tree" model="ir.ui.view">
+        <field name="name">building.class.view.tree</field>
+        <field name="model">building.class</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="building_id" />
+                <field name="building_name" />
+                <field name="number_of_rooms" />
+                <field name="number_of_floors" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
