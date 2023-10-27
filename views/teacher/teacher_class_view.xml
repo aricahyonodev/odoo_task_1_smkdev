@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="student_class_action" model="ir.actions.act_window">
-        <field name="name">Daftar Murid</field>
-        <field name="res_model">student.class</field>
+    <record id="teacher_class_action" model="ir.actions.act_window">
+        <field name="name">Daftar Guru</field>
+        <field name="res_model">teacher.class</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <record id="student_class_view_tree" model="ir.ui.view">
-        <field name="name">student.class.view.tree</field>
-        <field name="model">student.class</field>
+    <record id="teacher_class_view_tree" model="ir.ui.view">
+        <field name="name">teacher.class.view.tree</field>
+        <field name="model">teacher.class</field>
         <field name="arch" type="xml">
             <tree string="">
                 <field name="student_id"/>
