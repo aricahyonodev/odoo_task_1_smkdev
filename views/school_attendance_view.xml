@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="school_attedance_menu"
+        name="School Attedance"
+        />
+    <!-- <menuitem
+        id="school_attedance_menu_attendace"
+        name="Kehadiran Siswa"
+        parent="school_attedance_menu"
+    />
+    <menuitem
+        id="school_attedance_menu_class"
+        name="Kelas"
+        parent="school_attedance_menu"
+    /> -->
+    <menuitem
+        id="school_attedance_menu_user"
+        name="Pengguna"
+        parent="school_attedance_menu"
+    />
+    <menuitem
+        id="school_attedance_menu_user_teacher"
+        name="Guru"
+        parent="school_attedance_menu_user"
+        action="teacher_class_action"
+    />
+    <menuitem
+        id="school_attedance_menu_user_student"
+        name="Murid"
+        parent="school_attedance_menu_user"
+        action="student_class_action"
+    />
+
+</odoo>
