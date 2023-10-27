@@ -9,12 +9,18 @@
         id="school_attedance_menu_attendace"
         name="Kehadiran Siswa"
         parent="school_attedance_menu"
+    /> -->
+     <menuitem
+        id="school_attedance_menu_inventory"
+        name="Bangunan"
+        parent="school_attedance_menu"
     />
     <menuitem
-        id="school_attedance_menu_class"
-        name="Kelas"
-        parent="school_attedance_menu"
-    /> -->
+        id="school_attedance_menu_invetory_room"
+        name="Ruangan"
+        parent="school_attedance_menu_inventory"
+        action="room_class_action"
+    /> 
     <menuitem
         id="school_attedance_menu_user"
         name="Pengguna"
