@@ -12,7 +12,7 @@
         <field name="model">student.class</field>
         <field name="arch" type="xml">
             <tree string="">
-                <field name="student_id"/>
+                <field name="name"/>
                 <field name="full_name"/>
                 <field name="gender"/>
                 <field name="address"/>

@@ -8,16 +8,44 @@
     </record>
 
     <record id="building_class_view_tree" model="ir.ui.view">
-        <field name="name">building.class.view.tree</field>
+        <field name="name">Detail</field>
         <field name="model">building.class</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="building_id" />
+                <field name="name" />
                 <field name="building_name" />
                 <field name="number_of_rooms" />
                 <field name="number_of_floors" />
             </tree>
+            
         </field>
     </record>
 
+<record id="building_class_view_form" model="ir.ui.view">
+    <field name="name">building.class.view.form</field>
+    <field name="model">building.class</field>
+    <field name="arch" type="xml">
+        <form string="">
+            <sheet>
+            <group name="name" string="string">
+                <field name="name" />
+                <field name="building_name" />
+                <field name="number_of_rooms" />
+                <field name="number_of_floors" />
+            </group>
+               <notebook>
+                <page name="Ruangan">
+                   <field name="building_line_ids" nolable="1" options="{'reload_on_button' : true }" >
+                        <tree edit="true" editable="top" create="true" delete="true">
+                            <field name="room_id" />
+                            <field name="room_name" />
+                            <field name="room_capacity" />
+                        </tree>
+                    </field>  
+                </page>
+               </notebook>
+            </sheet>
+        </form>
+    </field>
+</record>
 </odoo>

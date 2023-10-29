@@ -3,4 +3,6 @@ access_student_class_admin,student.class.admin,model_student_class,base.group_us
 access_teacher_class_admin,teacher.class.admin,model_teacher_class,base.group_user,1,1,1,1
 access_room_class_admin,room.class.admin,model_room_class,base.group_user,1,1,1,1
 access_building_class_admin,building.class.admin,model_building_class,base.group_user,1,1,1,1
+access_building_line_admin,building.line.admin,model_building_line,base.group_user,1,1,1,1
 access_lesson_class_admin,lesson.class.admin,model_lesson_class,base.group_user,1,1,1,1
+access_lesson_line_admin,lesson.line.admin,model_lesson_line,base.group_user,1,1,1,1

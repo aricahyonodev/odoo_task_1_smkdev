@@ -5,7 +5,7 @@ class StudentClass(models.Model):
     _description = 'Student Class'
 
     #basic
-    student_id = fields.Char(string='NIS')
+    name = fields.Char(string='Kode Siswa')
     full_name = fields.Char(string='Nama Lengkap')
     gender = fields.Selection([('male', 'Laki-Laki'), ('female', 'Perempuan')], string='Jenis Kelamin')
     date_of_birth = fields.Date(string='Tanggal Lahir')

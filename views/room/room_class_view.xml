@@ -12,10 +12,30 @@
         <field name="model">room.class</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="room_id" />
+                <field name="name" />
                 <field name="room_name" />
-                <field name="capacity" />
+                <field name="room_capacity" />
+                <field name="building_id" />
+                <field name="building_name" />
             </tree>
+        </field>
+    </record>
+
+    <record id="room_class_view_form" model="ir.ui.view">
+        <field name="name">room.class.view.form</field>
+        <field name="model">room.class</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="room_name" />
+                        <field name="room_capacity" />
+                        <field name="building_id" />
+                        <field name="building_name" />
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
 

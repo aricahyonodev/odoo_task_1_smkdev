@@ -12,11 +12,54 @@
         <field name="model">lesson.class</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="lesson_id" />
+                <field name="name" />
                 <field name="lesson_name" />
-                <field name="total_learner_hours" />
+                <field name="teacher_name" />
+                <field name="total_student" />
             </tree>
         </field>
     </record>
 
+<record id="lesson_class_view_form" model="ir.ui.view">
+    <field name="name">lesson.class.view.form</field>
+    <field name="model">lesson.class</field>
+    <field name="arch" type="xml">
+        <form string="">
+            <sheet>
+               <group>
+                <group name="" string="Pelajaran">
+                    <field name="name" />
+                    <field name="lesson_name" />
+                    <field name="total_learner_hours" />
+                </group>
+                 <group>
+                   <group string="Pengajar">
+                     <field name="teacher_id" />
+                     <field name="teacher_name" />
+                   </group>
+                   <group string="Lokasi">
+                     <field name="room_id" />
+                     <field name="room_name" />
+                     <field name="building_id" />
+                     <field name="building_name" />
+                   </group>
+                </group>
+               </group>
+                <notebook>
+                <page string="Daftar Murid">
+                    <field name="lesson_line_ids" nolable="1" options="{'reload_on_button' : true }" >
+                        <tree edit="true" editable="top" create="true" delete="true">
+                         <field name="student_id" />
+                         <field name="student_full_name" />
+                         <field name="student_phone_number" />
+                         <field name="student_gender" />
+                        </tree>
+                    </field>  
+                </page>
+            </notebook>
+            </sheet>
+            
+        </form>
+    </field>
+</record>
 </odoo>
