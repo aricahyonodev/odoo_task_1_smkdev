@@ -22,4 +22,33 @@
         </field>
     </record>
 
+    <record id="teacher_class_view_form" model="ir.ui.view">
+        <field name="name">teacher.class.view.form</field>
+        <field name="model">teacher.class</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="full_name"/>
+                        <field name="gender"/>
+                        <field name="address"/>
+                        <field name="date_of_birth"/>
+                        <field name="phone_number"/>
+                    </group>
+                    <notebook>
+                        <page string="Daftar Pelajaran">
+                            <field name="lesson_ids">
+                                <tree>
+                                  <field name="name" />
+                                  <field name="lesson_name" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
 </odoo>

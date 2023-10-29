@@ -39,8 +39,11 @@ class LessonLine(models.Model):
     _description = 'Lesson Line'
 
     lesson_line_id = fields.Many2one('lesson.class', string='Kode Pelajaran')
+
     student_id = fields.Many2one('student.class', string='Kode Murid')
     student_full_name = fields.Char(string='Nama Lengkap', related='student_id.full_name')
     student_phone_number = fields.Char(string='Nomor HP', related='student_id.phone_number')
     student_gender = fields.Selection([('male', 'Laki-Laki'), ('female', 'Perempuan')], string='Jenis Kelamin', related='student_id.gender')
    
+    lesson_code = fields.Char(string='Pelajaran', related='lesson_line_id.name')
+    lesson_name = fields.Char(string='Pelajaran', related='lesson_line_id.lesson_name')

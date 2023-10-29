@@ -12,4 +12,4 @@ class TeacherClass(models.Model):
     address = fields.Text(string='Alamat')
     phone_number = fields.Char(string='Nomor Telepon')
 
-    lesson_id = fields.Many2one('lesson.class', string='Lesson Id')
+    lesson_ids = fields.One2many('lesson.class', 'teacher_id', string='Lesson Id')
