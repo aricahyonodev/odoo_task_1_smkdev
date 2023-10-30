@@ -5,11 +5,6 @@
         id="school_attedance_menu"
         name="School Attedance"
         />
-    <!-- <menuitem
-        id="school_attedance_menu_attendace"
-        name="Kehadiran Siswa"
-        parent="school_attedance_menu"
-    /> -->
      <menuitem
         id="school_attedance_menu_lesson"
         name="Pelajaran"
@@ -60,6 +55,13 @@
         parent="school_attedance_menu_user"
         action="student_class_action"
         sequence="2"
+    />
+     <menuitem
+        id="school_attedance_menu_attendace"
+        name="Kehadiran Siswa"
+        parent="school_attedance_menu"
+        action="attendance_class_action"
+        sequence="4"
     />
 
 </odoo>

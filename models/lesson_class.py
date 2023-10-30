@@ -26,13 +26,8 @@ class LessonClass(models.Model):
     @api.depends("lesson_line_ids")
     def _compute_total_student(self):
         self.total_student = (len(self.lesson_line_ids))
-        # self.total_student = "%s Murid" (str(len(self.lesson_line_ids)))
-
-    # @api.onchange("partner_id")
-    # def _onchange_partner_id(self):
-    #     self.name = "Document for %s" % (self.partner_id.name)
-    #     self.description = "Default description for %s" % (self.partner_id.name)
    
+    attendance_ids = fields.One2many('attendance.class', 'attendance_lesson_id', string="Attendance Line")
 
 class LessonLine(models.Model):
     _name = 'lesson.line'

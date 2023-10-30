@@ -9,7 +9,6 @@ class BuildingClass(models.Model):
     building_name = fields.Char(string='Nama Bangunan')
     number_of_rooms = fields.Integer(string='Total Ruangan')
     number_of_floors = fields.Integer(string='Total Lantai')
-
    
     #relations
     building_line_ids = fields.One2many('building.line', 'building_line_id', string="Building Line")

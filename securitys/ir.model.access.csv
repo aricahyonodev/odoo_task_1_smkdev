@@ -6,3 +6,5 @@ access_building_class_admin,building.class.admin,model_building_class,base.group
 access_building_line_admin,building.line.admin,model_building_line,base.group_user,1,1,1,1
 access_lesson_class_admin,lesson.class.admin,model_lesson_class,base.group_user,1,1,1,1
 access_lesson_line_admin,lesson.line.admin,model_lesson_line,base.group_user,1,1,1,1
+attendance_class_admin,attendance.class.admin,model_attendance_class,base.group_user,1,1,1,1
+attendance_line_admin,attendance_line.admin,model_attendance_line,base.group_user,1,1,1,1
